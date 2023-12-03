@@ -4,4 +4,4 @@
 -Color analysis
 -Music stuff
 -Creating repo for prod from experiments
-
+-Licenses are useful. Generate your own called "Hippy Drum Circle 1.7"
