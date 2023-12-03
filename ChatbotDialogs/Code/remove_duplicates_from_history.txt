@@ -1,0 +1,30 @@
+
+Created:	03.12.2023
+################################################################################################
+
+To remove duplicate entries from the Bash or Zsh history, you can use command-line utilities to filter and remove duplicate lines. Here are methods for both Bash and Zsh:
+For Bash:
+You can remove duplicate entries from the Bash history using the awk command along with sort and uniq to filter out duplicates:
+
+# Remove duplicate entries from Bash history
+cat ~/.bash_history | sort -u > ~/.bash_history_temp
+mv ~/.bash_history_temp ~/.bash_history
+
+This sequence of commands reads the Bash history file, sorts it, removes duplicate lines, saves the unique history to a temporary file, and then replaces the original Bash history file with the new, duplicate-free version.
+
+For Zsh:
+For Zsh, the process is similar but considering Zsh's specific history file:
+
+# Remove duplicate entries from Zsh history
+cat ~/.zsh_history | awk '!seen[$0]++' > ~/.zsh_history_temp
+mv ~/.zsh_history_temp ~/.zsh_history
+
+
+This command reads the Zsh history file, uses awk to remove duplicate lines, saves the unique history to a temporary file, and then replaces the original Zsh history file with the new, duplicate-free version.
+Make sure to backup your history file before making changes to it. These commands will remove exact duplicate lines, but variations with leading spaces or formatting differences won't be considered duplicates.
+After executing these commands, your Bash or Zsh history file should have removed the duplicate entries, leaving only unique commands in the history.
+
+################################################################################################
+## End of File
+################################################################################################
+

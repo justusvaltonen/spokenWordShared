@@ -1,0 +1,15 @@
+
+
+    Amper Music: Offers AI-driven music composition tools that allow users to create custom music tracks based on their preferences.
+
+    Jukedeck: An AI-powered music composition platform that generates royalty-free music based on user inputs like mood, style, and tempo.
+
+    AIVA (Artificial Intelligence Virtual Artist): This AI composer specializes in classical music composition and has been used to create original pieces performed by orchestras.
+
+    Google's Magenta Project: A research project exploring the role of AI in the arts and music, including tools for generating melodies and harmonies.
+
+    OpenAI's MuseNet: An AI model capable of generating high-fidelity music across different genres and styles.
+
+These AI tools can assist musicians, composers, or hobbyists by providing generated melodies, harmonies, or entire music tracks based on user inputs, preferences, or predefined styles. However, while these AI systems are impressive, they may still require human intervention or adjustments to achieve specific artistic goals or match particular preferences.
+
+
