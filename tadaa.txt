@@ -1,0 +1,7 @@
+
+
+-Game manuals
+-Color analysis
+-Music stuff
+-Creating repo for prod from experiments
+
