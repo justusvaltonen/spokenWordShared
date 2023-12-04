@@ -1,0 +1,34 @@
+
+Created:	04.12.2023
+################################################################################################
+
+https://web.archive.org/web/20120106083254/http://tatooine.fortunecity.com/vonnegut/29/hitch/parhaat.html	(1)
+
+------------------------------------------------------------------------------------------------
+
+(1) This illustrates the good old sourcing puzzle. I source a website that sources a book.
+-To be honest I arrived here through a link on another website that was sourcing in its code this website.
+-I was looking for sources for CLI customization and found a "cowsay" (original source unknown) plugin that uses (1).
+-Ledgers are cool and all, but there is good to be some sort of a guideline on how much we want to log.
+-Holy shit. I enjoyed the quotes here, but still TLDR. Yet I feel as though I know what the book is about already. Maybe even if I had read it.
+
+-- Now the actual quotes --
+(A)
+"Now it is such a bizarrely improbable coincidence that anything so mindboggingly useful could have evolved purely by chance that some thinkers have chosen to see it as the final and clinching proof of the non-existence of God.
+"The argument goes something like this: `I refuse to prove that I exist,' says God, `for proof denies faith, and without faith I am nothing.'
+"`But,' says Man, `The Babel fish is a dead giveaway, isn't it? It could not have evolved by chance. It proves you exist, and so therefore, by your own arguments, you don't. QED.' (s.42)
+	--> Sounds like aristoteles translated in english. Maybe Douglas Addams did some translating...
+
+
+(B)
+"Prostetnic Vogon Jeltz smiled very slowly. This was done not so much for effect as because he was trying to remember the sequence of muscle movements. " (s.45)
+	--> Totally getting this guy
+
+
+
+
+
+
+################################################################################################
+## End of File
+################################################################################################
