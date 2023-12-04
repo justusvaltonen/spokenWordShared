@@ -1,0 +1,17 @@
+
+What about comparison of 2 values, is that costly?
+ChatGPT
+
+In computing, comparing two values is generally a relatively inexpensive operation in terms of computational cost when compared to arithmetic operations like multiplication or division.
+
+The most common types of comparisons in computing involve checking equality (e.g., ==), inequality (e.g., !=), greater than (e.g., >), less than (e.g., <), greater than or equal to (e.g., >=), and less than or equal to (e.g., <=).
+
+The cost of comparison is typically minimal because modern processors have dedicated hardware for performing comparison operations efficiently. The comparison is often carried out using simple logic gates, which are fundamental components in digital circuits. These logic gates are designed to execute comparison operations quickly, making them highly efficient.
+
+Moreover, comparisons are fundamental to the decision-making process in programming, such as in conditional statements (if-else statements), loops, sorting algorithms, searching algorithms, and more. These comparisons are essential for controlling program flow, making them crucial but efficient operations in computing.
+
+However, it's important to note that the efficiency of comparison operations can vary depending on the context, programming language, hardware architecture, and the specific implementation. For instance, comparing large data structures or complex objects might involve more comparisons and may be relatively more costly than comparing simple data types like integers or floating-point numbers. Nonetheless, in most scenarios, comparisons remain computationally inexpensive compared to many other operations in computing.
+
+
+
+

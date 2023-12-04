@@ -5,3 +5,9 @@ Rules of use will constantly be changing?
 USE_INSTRUCTIONS:
 -When not done speaking, but running out of time, use dir: unfinished
 -When for the time being you have said all there is to say, use dir: IhaveSpoken
+
+-Generative AI Studio
+-Vertex AI
+-Google Cloud Skill Boost
+-12 days of no cost training to learn generative AI this December
+-Google Bard

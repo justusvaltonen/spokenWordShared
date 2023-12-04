@@ -1,0 +1,37 @@
+
+from random import randint
+
+# Publicly agreed upon values (can be prime numbers and a base)
+p = 23  # Prime number
+g = 5   # Primitive root of p
+
+# Alice's secret value
+a = randint(1, p - 1)  # Random integer between 1 and p-1
+print("Alice's secret:", a)
+
+# Bob's secret value
+b = randint(1, p - 1)  # Random integer between 1 and p-1
+print("Bob's secret:", b)
+
+# Calculate Alice's public key
+A = (g ** a) % p
+
+# Calculate Bob's public key
+B = (g ** b) % p
+
+# Exchange public keys (A and B)
+print("\nExchange public keys:")
+print("Alice sends:", A)
+print("Bob sends:", B)
+
+# Calculate shared secret key using public keys exchanged
+shared_secret_Alice = (B ** a) % p
+shared_secret_Bob = (A ** b) % p
+
+# Both parties should have the same shared secret key
+print("\nShared secret calculated by Alice:", shared_secret_Alice)
+print("Shared secret calculated by Bob:", shared_secret_Bob)
+
+
+
+
