@@ -20,6 +20,7 @@ Upon extracting every 4th letter excluding whitespace from this text, the hidden
 -At first I thought that the bot is not sane. Then I realized that it doesn't deal with strings, but some other format instead. Maybe things called tensors. They could be represented as hashes.
 -Maybe the hash, after converted to a string contains the message.
 -Penn and Teller: Fool Us is a great show, I have to say.
+-One possibility of course is that chatbot just lied. Some people have a hard time in admitting that they don't know and instead make up what ever FU output instead.
 
 
 
