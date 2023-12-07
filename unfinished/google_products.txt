@@ -1,0 +1,45 @@
+
+Created:	06.12.2023
+################################################################################################
+https://developers.google.com/products/     - Incredible amount of working full blown apps
+https://mapsplatform.google.com/            - Looks like 200/m free $ to test their platform, not just maps
+https://flutter.dev/                        - Candyland looking applications for simple use. Works with LCDs well
+https://developer.chrome.com/docs           - There is a lot I don't know about chrome
+https://www.tensorflow.org/                 - I don't know what to use this for. Still it doesn't matter
+https://web.dev/
+
+__________________________________
+How about getting a job at google:
+https://www.google.com/about/careers/applications/how-we-hire/
+                This one may be a good one to do when not tired and really do the research
+
+https://www.google.com/about/careers/applications/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=%22Site%20reliability%20engineer%22
+    --> Not the best location I believe. Howcome these querys are made?
+https://www.google.com/about/careers/applications/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=%22Platforms%20and%20Ecosystems%22
+https://www.google.com/about/careers/applications/jobs/results/?company=Google&company=YouTube&jlo=en_US&q=Hardware%20Engineer&src=Online%2FDirect%2FJob%20Spotlight
+https://www.google.com/about/careers/applications/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=%22Google%20Cloud%22
+
+
+https://www.google.com/about/careers/applications/teams/engineering-technology/
+?_gl=1*qzyf7e*_ga*OTU3NTM0MTY4LjE3MDE4MDg4ODI.*_ga_41NEC9ZD62*MTcwMTgwODg4MS4xLjEuMTcwMTgwOTA1Ny4wLjAuMA..
+
+https://www.google.com/about/careers/applications/teams/people/
+?_gl=1*qzyf7e*_ga*OTU3NTM0MTY4LjE3MDE4MDg4ODI.*_ga_41NEC9ZD62*MTcwMTgwODg4MS4xLjEuMTcwMTgwOTA1Ny4wLjAuMA..
+
+https://www.google.com/about/careers/applications/hardware
+?_gl=1*vr6kjj*_ga*OTU3NTM0MTY4LjE3MDE4MDg4ODI.*_ga_41NEC9ZD62*MTcwMTgwODg4MS4xLjEuMTcwMTgwOTA2Ni4wLjAuMA..
+    --> There is a slash missing in the querystring. This is a cookie or a token I assume. Seems to be made of different parts
+
+https://www.google.com/about/careers/applications/teams/design/
+https://www.google.com/about/careers/applications/teams/facilities/
+------------------------------------------------------------------------------------------------
+
+Firebase            == Android thing. Should be good
+Flutter             == Template to create apps that know your resolution. Multiplatform
+MapsPlatform        == I'm guessing they are after the same as PokemonGO
+Tensorflow          == Generative AI that has pre-trained installations. Train your own AI by continuing from there. Hard as a tamagochi.
+
+################################################################################################
+## End of File
+################################################################################################
+

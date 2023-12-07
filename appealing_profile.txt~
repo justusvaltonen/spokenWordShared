@@ -20,7 +20,7 @@ https://dev.to/quine/contribute-to-open-source-in-the-next-10-min-step-by-step-b
 https://docs.github.com/en/get-started/exploring-integrations/github-developer-program      (A)     Not there yet, but I anticipate this route
 https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile  (B)
 
-------------------------------------------------------------------------------------------------
+
 (1)
 -Go to repositories and create a new one. Make it public. Name needs to be the same as username.
 -There was some advertised readme autogenerating tool. Dependencies were node and tailwindCSS at least.
