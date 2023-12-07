@@ -2,6 +2,47 @@
 
 -Game manuals
 -Color analysis
--Music stuff
--Creating repo for prod from experiments
--Licenses are useful. Generate your own called "Hippy Drum Circle 1.7"
+-Music stuff									-- Research on foundations
+-Creating repo for prod from experiments					-- Done -- Now to start filling it
+-Licenses are useful. Generate your own called "Hippy Drum Circle 1.7"		-- Done --
+
+
+Artsy
+ AlterEgo			- At least one character is created somewhere
+  Creds
+  History
+  Persona
+ Experiences			- Not for publishing.
+  Exclusive
+  PrivilagedAccess
+ Music				- Why do I like music?
+  Lyrics			- I am the lyrics
+  AlbumCovers			- Bad experiment, contrast between sources vary too much. Google gives shitty. Spotify in darkmode is epic. More of this on another file (R.f"<path>")
+  Sound				- SW available
+   Breakdown
+   General			- What makes the sound of CypressHill... Easy example
+ Tokens				- If one wants to have a memory, a token can be used. Strong memories can be tokens themselves. Music, medals, items, smells, taste...
+ Visuals
+  AI-tools			- Can I describe what I visualise? Does it understand style?
+   Logo				- In the making
+   DescribeImagination
+   AlbumCovers			- Color, volume, placement, porportions, angles, mathy, manythings.
+   DescriptionOfFeelings
+  Architecture			- Why are some ugly things beautiful
+  Camera			- Can take pics or video. One can do research with something digital.
+  Cars				- BMW has a brand of delivering frontends, Ferrari has their own thing. Porsche is art
+  SimpleDesigns
+   SmallPieces			- How do round things behave? How about square? Can I make pointillism?
+   NetworkMap			- Mindmap for all I know. What structures form?
+   Circuitry
+
+
+Album list done for 260 first items. Good stuff discovered about images. Closer inspection needed to bake an album cover for myself.
+
+
+
+
+
+
+
+
