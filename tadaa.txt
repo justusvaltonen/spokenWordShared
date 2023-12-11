@@ -2,6 +2,7 @@
 
 -Game manuals
 -Color analysis
+-Logo improvements
 -Music stuff									-- Research on foundations
 -Creating repo for prod from experiments					-- Done -- Now to start filling it
 -Licenses are useful. Generate your own called "Hippy Drum Circle 1.7"		-- Done --
@@ -39,7 +40,8 @@ Artsy
 
 Album list done for 260 first items. Good stuff discovered about images. Closer inspection needed to bake an album cover for myself.
 
-
+https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts
+    --> How to get more than 1 account / repo to work
 
 
 

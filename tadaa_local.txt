@@ -2,6 +2,8 @@
 Created:	06.12.2023
 ################################################################################################
 
+-Siivoile kaikki ennen postailua
+-Tee gitignore tällekki repolle
 -Game manuals
 -Color analysis
 -Music stuff
