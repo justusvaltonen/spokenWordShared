@@ -1,0 +1,54 @@
+
+Created:	12.12.2023
+################################################################################################
+
+
+
+How do I make a script global on linux?
+
+ChatGPT
+To make a script globally accessible on Linux, you have a few options:
+
+1. Adding to PATH:
+The simplest way is to place the script in a directory that's already in your system's PATH. Common directories include /usr/local/bin or /usr/bin. You may need superuser (root) permissions to copy the script into these directories.
+
+Example:
+bash
+sudo cp your_script.sh /usr/local/bin
+
+2. Create a Custom Directory:
+You can create a custom directory for your scripts and add it to the PATH. This approach can be useful if you have multiple scripts.
+    Create a directory for your scripts, e.g., ~/bin:
+    bash
+mkdir ~/bin
+Add this directory to your PATH by editing the .bashrc, .bash_profile, or .profile file in your home directory. Add the following line:
+bash
+export PATH="$HOME/bin:$PATH"
+Move your script to this directory:
+bash
+    mv your_script.sh ~/bin
+
+3. Symbolic Link:
+Another method is to create a symbolic link to your script from a directory that's in the PATH.
+Example:
+bash
+sudo ln -s /path/to/your_script.sh /usr/local/bin/your_script
+This method allows you to execute the script by simply typing your_script in the terminal.
+
+4. Using /usr/local/bin:
+If your script is already in /usr/local/bin, you might need to ensure it has execute permissions. You can do this by using the chmod command:
+Example:
+bash
+sudo chmod +x /usr/local/bin/your_script.sh
+Remember, after making changes to the PATH, you might need to restart your terminal or source the shell configuration file to apply the changes:
+bash
+source ~/.bashrc
+After these steps, you should be able to run your script from any location in the terminal by typing its name (if it has the execute permission) without specifying its full path.
+
+
+
+
+################################################################################################
+## End of File
+################################################################################################
+
