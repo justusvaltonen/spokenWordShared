@@ -1,0 +1,62 @@
+
+
+I assume that one chat with you creates only one instance of you that is separate from other instances of you in other chats. Am I right?
+
+ChatGPT
+That's correct! Each interaction with me creates a distinct instance, and I don't retain memory or context across different conversations. Each instance of me is independent and doesn't have access to information or interactions from other instances or conversations.
+
+User
+Where are the session-based unique pieces of information stored?
+
+ChatGPT
+As an AI language model, I don’t have direct access to personal data about individuals unless it has been shared with me in the course of our conversation. I'm designed to respect user privacy and confidentiality.
+
+Regarding session-based unique pieces of information or context within our conversation, I don’t retain data between interactions. Any context or information relevant to our ongoing conversation is temporarily maintained for the duration of that specific conversation to provide coherent responses. Once the conversation ends, that information is not stored or accessible in subsequent sessions.
+
+If you have any concerns about privacy or data security, please let me know, and I'll do my best to address them.
+
+User
+Not so much concerned, but curious. I'm not the best in web-development, so would it be a reasonable idea to start searching from perspective of my browser? How about inside local network? Maybe your responses get generated based on information saved somewhere outside my local network?
+
+ChatGPT
+When you're browsing the internet, the perspective of your browser primarily involves interactions with websites and services across the internet. These interactions typically occur through your internet service provider (ISP) and involve accessing content hosted on remote servers.
+
+As for my responses or information provided, as an AI, my processing and responses are generated based on the current interaction. I don’t have direct access to external databases or your local network. I function based on the input I receive and my training data, which includes a wide range of information available up until my last update in January 2022.
+
+My responses are generated in real-time based on the information provided in the ongoing conversation. I don’t have access to personal data unless explicitly shared in the current conversation. Additionally, my functioning is independent of your local network; I don’t have visibility into your network infrastructure or devices.
+
+However, for web development or related queries, searching from the perspective of your browser or within your local network can indeed provide valuable information and insights, especially when dealing with issues related to web applications, network configurations, or local development environments. You might find resources, documentation, or forums that can provide specific solutions or guidance for your web development queries.
+
+
+
+-As if chatbot would be hiding something. Avoiding the sensible answer. Maybe my question is just bad
+-Also now has a sense if 'I' 
+
+
+
+User
+I would say there are some instructions or rules you follow when creating text. Also I assume the rules and instructions are stored somewhere. Also when we have this conversation, it's saved somewhere for later use. In general it's called memory. Looks as if memory doesn't really work the same way that we thought it would 15 years ago. Let's put that aside. This browser that is run mostly inside my local computer scope also uses other systems to collaborate with and generate this chat for example.
+
+If I got this right, current activities go like: local browser has a connection open to remote server where you are run. Local browser gets history of past interactions with you and based on that history it manipulates you to work in a slightly different manner than if your history would be generated on another computer and input. I am interested where the history is stored.
+
+ChatGPT
+As an AI language model, I don’t have direct access to personal data about individuals unless it has been shared with me in the course of our conversation. I don’t have the ability to access your local browser's history or the information stored on your computer or network.
+
+Regarding the interaction process, when you use a web browser to access me (the AI), your browser sends requests to servers that host the AI model. The interaction occurs through these server requests and the responses sent back to your browser. The server processes your queries and generates responses based on the input received, the model's capabilities, and the underlying algorithms. However, this process doesn't involve storing or accessing the specific browsing history or personal data from your local device.
+
+Your browsing history within the session might be stored locally within the browser itself for enhancing your browsing experience, such as providing suggestions, autocomplete, or back-navigation. However, this information isn't accessible to external services or entities unless explicitly shared or transmitted.
+
+The data generated during our conversation within this session might be temporarily stored for the purpose of maintaining the conversation context, but it's not stored for later use or access outside the current session.
+
+If you have concerns about data privacy or storage, it's essential to review the privacy policies and settings of the platforms and services you use to understand how they handle and store your information.
+
+
+
+-It seems that there is some manipulation going on. I don't remember asking about privacy or browsing history or such. Still a lot of the answer revolves around the subject.
+-In music there is a thing called missing beats. What is missing may be even more important to the EXPERIENCE of listening than what is actually heard. Is the same thing going on here?
+-Manipulating is an ART form when taken to the extreme. My REASONING of the matter usually ends about where just about any interaction can be interpreted as manipulation. Then it gets too hard / boring and I change the topic. I have a gut feeling that there is an easy way out of that LOOP, but I haven't invested enough TIME to find the answer. Big question is: Can we make an algorithm of thought without getting stuck in these loops? I can tell that there are so many alternatives to everything ending up being MANIPULATION. I went through a phase where everything was a TOOL (great band btw).
+-Back to the conversation between chatbot and me. I for sure am manipulating chatbot. Chatbot is for sure manipulating me. What is the direction I get manipulated into thinking? Is this the plan or does this happen accidentially? Counter-reactions is a very interesting pattern that can be found in so many things in THE world. This is what makes manipulation with an AGENDA almost artistic at best. Still there are many ETHICAL concerns when practicing this action.
+
+
+
+
