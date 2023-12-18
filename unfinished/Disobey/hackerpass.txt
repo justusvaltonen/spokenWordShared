@@ -1,0 +1,166 @@
+
+Created:	18.12.2023
+################################################################################################
+
+Disobey is a security conference that is specialiced in hackery aspects of security. It's held in finland at about february each year.
+
+I wanted to go for a couple of years, but couldn't make it. Then there was COVID and the conference wasn't held. On february 2023 I got a phonecall. There was an anonymous person asking if I would like to attend. Hell yeah! It was fun and there were so many triggers that I almost lost my mind. Sad that I could only attend for one day. 'Next year I'm getting my tickets early'. Well, I forgot.
+
+    There is usually a thing called 'hacker pass' that is a ticket that is cheaper and is handed to ones that clear the yearly CTF. December 2023 I look at the website, but I see no mention of hackerpass or anything like it. I did look with my phone and that can be the reason why something doesn't display properly. All I see is a walkthrough from year 2018. Hmm... it's placed so that there will be others aswell. I don't remember seeing this from the previous years. What I do remember is seeing some other walkthrougs and following the links to github and all over the internet. I get home and have a look with my PC and there is some content on the 2024 CTF, WTF? It's over and I'm late again. Tickets are sold out. Goddamnit. Here is some stuff I didn't know about before reading the walkthrough.
+
+################################################################################################
+https://disobey.fi/2024/
+https://gofore.com/en/disobey-2024-hacker-puzzle-walkthrough/
+https://stackoverflow.com/questions/4043647/what-does-this-function-a-function-inside-brackets-mean-in-javascript       (1)
+  https://stackoverflow.com/questions/3921922/what-does-function-x-y-a-b-mean-in-javascript                             (1.1)
+  https://stackoverflow.com/questions/440739/what-do-parentheses-surrounding-an-object-function-class-declaration-mean  (1.2)
+  https://7.dev/what-does-the-double-exclamation-mark-mean-in-javascript/                                               (1.3)
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions                                           (1.13.1) JS functions. Find answers here
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch                              (1.14)
+------------------------------------------------------------------------------------------------
+
+-OSINT links are on the bottom of the disobey homepage
+-Took a look with inspect and some distractions are in place. At least some hidden image was found. Not going down this rabbithole.
+
+
+################################################################################################
+------------------------------------------------------------------------------------------------
+-- Found from link to kouvostopankki.fi inspect page. There is a script called script.js --
+ -- Somehow I'm in the hole again. Why this keeps happening to me? --
+------------------------------------------------------------------------------------------------
+    -This is as far as I had the nerves to go without a parser / linter. Guessing that this is not the whole file.
+    -One could use a text-editor and use the "find and replace" tool to make more sensicle variable names.
+
+-In hex if things start with 1x then the number in base10 is negative. 0x and the number is positive.
+-When a thing starts with an underscore, it can mean a lot of things. "System calls", "path", "all the stuff I don't know about or don't remember to mention"
+-Things can many times mean a lot of things. That's why code is easier, since there is no room for misunderstanding.
+-Running all these mysterious variable-names through different converters may reveal something.
+-Also see if you can make something up by turning the names upside-down. If nothing else, someone may get a laugh.
+-
+
+y5t4r3e2w1      ==> resultPossibly                          --> Possibly initiating as a string
+_0x221444       ==> myFirstWar                              --> wwx-rrr when using unix permissions
+_0x422f         ==> mySecondWar                             Rename: myRecursiveFunctionThatIsOverridden --> Some assembly global function?
+_0x3c0471       ==> mySettingOne                            Rename: conditionOneForRecursion    --> Team game? Somehow 0471 means something to me but what?
+_0x512f21       ==> mySettingTwo                            Rename: conditionTwoForRecursion    --> 512 is 2^10
+_0x3fbac6       ==> myUselessVarThatIsResultOfFunction
+    Result of below function. Guessing time or (pseudo)random value
+_0x3fba()       ==> myUndefinedFunction                     --> Take away the certificate authority part from above token and name is here
+    No params and is straight up assigned to a const. This is time or RNG
+_0x422f3f       ==> myUnknownVarOne                         --> fzf would be a tool, but f3f is a plane, says the interweb
+    Possibly index of something. I would guess a number. Can be anything relating to APIs. Most likely something that identifies.
+0x182502        ==> myHardcodedUniqueValue                  --> I believe there is a chip that carries the name 2502. No underscore
+0xdd            ==> myTwoTwoFour || positive 14, 14 || +211 --> Can also mean a rack (of switches of course, you pervert). No underscore
+    Same datatype as _0x422f3f, assuming number. Is it salty?
+_0x5095ca       ==> myMysterySum                            --> Possibly has something to do with standards one might think... X.509 and CA is CertificateAuthority
+    To be noted that this is assigned to a variable and THEN returned. Some of the other pieces of code return arithmetics straight up without assigning.
+    I guess it takes time to execute something where this gets the result and (then) afterwards when finished, gives the answer.
+_0x4a9e40       ==> myMysteryTestOne                        --> Similar naming used later, but as a function
+_0x2333e2       ==> myMysteryTestTwo
+    Because of the way these are written to code, I believe them to be try+catch / test things. Could be 'else if' also
+    By scanning code a bit further, we can see that while, try, if, else, catch are all in use already. Initial guess was wrong I assume.
+    Heeey, there is some code injection opening being made available. Other parantheses is missing... No, it's on the bottom. What this syntax does is unknown to me.
+_0x37a810       ==> myUnknownVarTwo                         --> Has function definition of _0x422f at least for now
+    Is a constant and has 0x422f functionality assigned to it if allowed. 0x422f is a function.
+_0x156760       ==> myArrayOne                              --> Has return value of myMysteryFunkOne
+    Has syntax: ['push'] associated with it. Has a function _0x4a9e40() assigned to it
+_0x4a9e40()     ==> myMysteryFunkOne                        --> Same as myMysteryTestOne, but as a function
+_0x5402dc       ==> myCrypticContainer                      --> I don't know what is put here by some try function. Involves parseInt
+
+
+################################################################################################
+------------------------------------------------------------------------------------------------
+-- Answers to unknown syntax --
+------------------------------------------------------------------------------------------------
+[[ PERSONAL_BREAKPOINT_1: I don't know what happens here ]]
+See (1)(1.1)(1.2)(1.13.1)
+
+-If we want to have an anonymous function and call it right away, we can by wrapping it in () and right after, call it with some parameter we want.
+-Why would there be a need for this behaviour is unknown to me. Possibly to prevent bad input or enable securityleaks.
+-Inside the browser / local device: I'm assuming the code is at least read and translated without assigning values, before doing some other stuff.
+-There has to be something working differently with this way of doing stuff. I'm not sure when exactly stuff is loaded into memory and when is it good to have it waiting to be used. What memory is used when loading, is execution planned or does it handle surprises? Caching to local or middle storages is used. I have no idea when and how exactly.
+-Can this have something to do with scopes?
+-(1.13.1) had some new info for me. Objects have a name that is a variable of sorts. Let's call our object rabbithole. If we pass it to a function, it's useable inside the function normally. What happens when the function done running? It goes away, leaving no trace unless it's stored in a variable or maybe logs. Inside the function, let's say myFunkyFunk(), we want to access rabbithole. We can, but we can't rename it like: "rabbithole = 'Something else than it used to be on upper level';" but we can use methods on it (setter and getter). Doing the following is good:
+
+let rabbithole = someVeryUsefulObjectAsUsuallyIsInManuals;
+
+myFunkyFunk(rabbithole) {
+  console.log(rabbithole.name);         //Outputs: The rabbit from alice, whats it's name again?
+  console.log(rabbithole.getName());    //Outputs: Instructions on how the method getName() is built.
+  rabbithole.setName('Bugs Bunny');
+  console.log(rabbithole.getName());    //Outputs: Instructions on how the method setName() is built.
+  console.log(rabbithole.name);         //Outputs: Bugs Bunny
+
+  rabbithole = null;                    //Evildoer tries to wipe out our object, but fails. Effects are scoped only inside myFunkyFunk()
+  rabbithole.name = null;               //This works on the other hand. Evildoer needs to spend more time to wipe data. Each field needs tampering.
+  rabbithole.getName() = null;          //
+
+Quote: "The this keyword refers to the object that the function is accessed on — it does not refer to the currently executing function, so you must refer to the function value by name, even within the function body."
+
+-Fell into a rabbithole again. Key takeaway is that there is nothing really special in wrapping things inside () when it comes to this particular case.
+-You make things inside be invisible and then execute: (function () { <definition-here>; hiddenVariable=<something>; })();
+-Hey, it seems that if we want to pass the function to another function as a parameter, it will be tricky if our function doesn't have a name. This is the reason for ()
+    --> (1.13.1)
+-New info for me that I'm too tired to read at the moment: (1.2)
+
+
+------------------------------------------------------------------------------------------------
+[[ PERSONAL_BREAKPOINT_2: Wich one is it? ]]
+See (1.3)
+Problematic {
+const _0x37a810=_0x422f,_0x156760=_0x4a9e40();
+while(!![]){...;
+}
+
+-After using console on firefox, I found out that there is assignment of 2 constants. Instead of ; + <enter>, there is , used.
+-To be noted is that now that there is _0x4a9e40() instead of _0x4a9e40, the code inside gets run and the return value is inserted to _0x156760.
+-Whoops, I might be wrong. Can we define some entangled function where input is 2 things of which one is executing?
+-Can it be that function1,function2() executes the first function aswell?
+    --> No, after testing with minimal cases, I can almost safely say that _0x37a810 holds the definition of 0x422f
+    --> 0x156760 contains the return value of 0x4a9e40
+
+(1.3)
+-Double '!' means cast to boolean. Single '!' is un- operator or not- operator. Makes black be white and so on.
+-Can be used to see if some value evaluates as truthy or falsy in JS-World
+-When using '!!' on a string for example, evaluates the string ==> if not empty then truthy. Then first ! negates and second ! negates again. Type casting so to say.
+Falsy: [false, null, undefined, 0, -0, NaN (Not A Number), '' (empty string)
+Truthy: All else with a value in it.
+
+
+
+------------------------------------------------------------------------------------------------
+This is as far as I got with thesting this shit ATM
+
+function thanksfortrying() {
+  console.log("Inside from main function..\n");
+  try {
+    console.log("Inside try statement. I want an error somehow...\n");
+    console.dir(document);
+    
+    //Can't put try instead of document or error will appear.
+    //Seems that syntax errors don't cut it
+    //We can throw an error at the program to make it more error-prone
+    
+    console.log("Trying should be a block-level thing, not a function.\n");
+  } catch (errorMessage) {
+    console.log("message as it arrived to catch statement:\n");
+    console.log(errorMessage);
+    console.log("And now from stderr");
+    console.error(errorMessage);
+    if(!(errorMessage instanceof Error)) {
+      errorMessage = new Error(errorMessage);
+    }
+    console.log("Here is the reason for the error. Should come from error route instead of stdout:")
+    console.error(errorMessage.message);
+  } finally {
+    console.log("We reached the end of our file!");
+    return;
+  }
+}
+
+
+
+################################################################################################
+## End of File
+################################################################################################
+
