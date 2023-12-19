@@ -1,0 +1,31 @@
+
+Created:	18.12.2023
+################################################################################################
+
+https://disobey.fi/2024/                                                                                                (0.24)
+kouvostopankki.fi                                                                                                       (0.5)
+https://gofore.com/en/disobey-2024-hacker-puzzle-walkthrough/                                                           (0.55)
+https://stackoverflow.com/questions/4043647/what-does-this-function-a-function-inside-brackets-mean-in-javascript       (1)
+  https://stackoverflow.com/questions/3921922/what-does-function-x-y-a-b-mean-in-javascript                             (1.1)
+  https://stackoverflow.com/questions/440739/what-do-parentheses-surrounding-an-object-function-class-declaration-mean  (1.2)
+  https://7.dev/what-does-the-double-exclamation-mark-mean-in-javascript/                                               (1.3)
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions                                           (1.13.1) JS functions. Find answers here
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch                              (1.14)
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt                             (1.15)
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop                                                    (1.17)
+
+https://bytetool.web.app/en/ascii/code/0xdd/                                                                            (4.1)
+https://decimal.info/decimal-to-fraction/decimal-as-a-fraction-calculator.html                                          (4.2)
+
+https://new.nsf.gov/news/teleportation-possible-yes-quantum-world                                                       (7.1)
+https://en.wikipedia.org/wiki/Electron                                                                                  (7.2)
+https://plato.stanford.edu/entries/qt-entangle/                                                                         (7.3)
+https://en.wikipedia.org/wiki/Quantum_entanglement                                                                      (7.4) Looks nice
+  https://fi.wikipedia.org/wiki/Lomittuminen
+https://scienceexchange.caltech.edu/topics/quantum-science-explained/entanglement                                       (7.5)
+------------------------------------------------------------------------------------------------
+
+################################################################################################
+## End of File
+################################################################################################
+

@@ -1,0 +1,152 @@
+
+Created:	18.12.2023
+################################################################################################
+
+Disobey is a security conference that is specialiced in hackery aspects of security. It's held in finland at about february each year.
+
+I wanted to go for a couple of years, but couldn't make it. Then there was COVID and the conference wasn't held. On february 2023 I got a phonecall. There was an anonymous person asking if I would like to attend. Hell yeah! It was fun and there were so many triggers that I almost lost my mind. Sad that I could only attend for one day. 'Next year I'm getting my tickets early'. Well, I forgot.
+
+    There is usually a thing called 'hacker pass' that is a ticket that is cheaper and is handed to ones that clear the yearly CTF. December 2023 I look at the website, but I see no mention of hackerpass or anything like it. I did look with my phone and that can be the reason why something doesn't display properly. All I see is a walkthrough from year 2018. Hmm... it's placed so that there will be others aswell. I don't remember seeing this from the previous years. What I do remember is seeing some other walkthrougs and following the links to github and all over the internet. I get home and have a look with my PC and there is some content on the 2024 CTF, WTF? It's over and I'm late again. Tickets are sold out. Goddamnit. Here is some stuff I didn't know about before reading the walkthrough.
+
+################################################################################################
+
+-OSINT links are on the bottom of the disobey homepage
+-Took a look with inspect and some distractions are in place. At least some hidden image was found. Not going down this rabbithole.
+
+################################################################################################
+------------------------------------------------------------------------------------------------
+-- Found from link to kouvostopankki.fi inspect page. There is a script called script.js --
+ -- Somehow I'm in the hole again. Why this keeps happening to me? --
+------------------------------------------------------------------------------------------------
+    -This is as far as I had the nerves to go without a parser / linter. Guessing that this is not the whole file.
+    -One could use a text-editor and use the "find and replace" tool to make more sensicle variable names.
+
+-In hex if things start with 1x then the number in base10 is negative. 0x and the number is positive.
+-When a thing starts with an underscore, it can mean a lot of things. "System calls", "path", "all the stuff I don't know about or don't remember to mention"
+-Things can many times mean a lot of things. That's why code is easier, since there is no room for misunderstanding.
+-Running all these mysterious variable-names through different converters may reveal something.
+-Also see if you can make something up by turning the names upside-down. If nothing else, someone may get a laugh.
+-
+
+y5t4r3e2w1      ==> resultPossibly                          --> Possibly initiating as a string
+_0x221444       ==> myFirstWar                              --> wwx-rrr when using unix permissions
+_0x422f         ==> mySecondWar                             Rename: myRecursiveFunctionThatIsOverridden --> Some assembly global function?
+_0x3c0471       ==> mySettingOne                            Rename: conditionOneForRecursion    --> Team game? Somehow 0471 means something to me but what?
+_0x512f21       ==> mySettingTwo                            Rename: conditionTwoForRecursion    --> 512 is 2^10
+_0x3fbac6       ==> myUselessVarThatIsResultOfFunction
+    Result of below function. Guessing time or (pseudo)random value
+_0x3fba()       ==> myUndefinedFunction                     --> Take away the certificate authority part from above token and name is here
+    No params and is straight up assigned to a const. This is time or RNG
+    Defining happens down in the code
+_0x422f3f       ==> myUnknownVarOne                         --> fzf would be a tool, but f3f is a plane, says the interweb
+    Possibly index of something. I would guess a number. Can be anything relating to APIs. Most likely something that identifies.
+    New guess is a buffer! At least something relating to mem, since allocating 0xdd from it.
+0x182502        ==> myHardcodedUniqueValue                  --> I believe there is a chip that carries the name 2502. No underscore
+0xdd            ==> myTwoTwoFour || positive 14, 14 || +211 --> Can also mean a rack (of switches of course, you pervert). No underscore
+    Same datatype as _0x422f3f, assuming number. Is it salty?
+    I believe 211 bytes can be our block size. I saw someone talk about blocks on the walkthrough
+_0x5095ca       ==> myMysterySum                            --> Possibly has something to do with standards one might think... X.509 and CA is CertificateAuthority
+    To be noted that this is assigned to a variable and THEN returned. Some of the other pieces of code return arithmetics straight up without assigning.
+    I guess it takes time to execute something where this gets the result and (then) afterwards when finished, gives the answer.
+_0x4a9e40       ==> myMysteryTestOne                        --> Similar naming used later, but as a function
+_0x2333e2       ==> myMysteryTestTwo                        --> Possibly a hash that we compare with something saved.
+    Because of the way these are written to code, I believe them to be try+catch / test things. Could be 'else if' also
+    By scanning code a bit further, we can see that while, try, if, else, catch are all in use already. Initial guess was wrong I assume.
+    Heeey, there is some code injection opening being made available. Other parantheses is missing... No, it's on the bottom. What this syntax does is unknown to me.
+_0x37a810       ==> myUnknownVarTwo                         --> Has function definition of _0x422f at least for now
+    Is a constant and has 0x422f functionality assigned to it if allowed. 0x422f is a function.
+_0x156760       ==> myArrayOne                              --> Has return value of myMysteryFunkOne
+    Has syntax: ['push'] associated with it. Has a function _0x4a9e40() assigned to it
+_0x4a9e40()     ==> myMysteryFunkOne                        --> Same as myMysteryTestOne, but as a function. Possibly a class
+_0x5402dc       ==> myCrypticContainer                      --> I don't know what is put here by some try function. Involves parseInt
+    Will be holding combination of many functions
+0x5c9b9         ==> myBattleshipMove                        --> I don't know what this is supposed to be doing. Possibly a play on words in some language
+
+hjkadshjkdsa    ==> For sure a color or string. Has 'black' assigned to it
+poiuytgvbnmk    ==> Same group as one above
+
+lkjhgf=_0x221444(0xde)  ==> Holy shit, why didn't I see this before. These are external libs. Can be copy of a class-template also. 0xde == 222
+wertyuio=_0x221444(0xdd)    ==> Same, but with 221 as param. These could be reponses from serverside also. Settings or middleware.
+
+q1w2e3r4t5()    ==> Define function.    Quartal_1 + Week_2 + Electron_3 + Radius_4 + Team_5. First things that came to my head
+
+const _0xd18e56=0x221444    ==> Deconstructing from some lib possibly.  --> D18 is a Dice. e56 doesn't do too much triggering. Something none-theless
+_0x4063be=[_0xd18e56(0xe7), ==> New init. Something from previous def is now used. 231. There will be a lot of params
+_0xd18e56(0xe3),            ==> Same as above, but 227
+poiuytgvbnmk,               ==> This is a colour
+_0xd18e56(0xe5),            ==> 229. Oh, yeah. Mercedes has one of theses.
+wertyuio,                   ==> Maybe exceptions?
+lkjhgf],                    ==> ending the deployment with 222 as the last phase
+
+_0x5b55df=                  ==> Only to begin again. Scoped inside a function. This is the first call to this variable. Maybe result of RNG?
+_0x4063be[ Math[_0xd18e56(0xe8)] ( Math['random']()*_0x4063be[_0xd18e56(0xe0)] ) ];    ==> Beautiful. Why choose this kind of syntax tho?
+    --> Creepy that 4063 used to be the phone number of a house where BE initials / nick would fit.
+    --> Is it somehow off limits to use the normal Math.random() syntax? Hey can I reverse this from what I see here?
+
+document[_0xd18e56(0xe2)]['style'][_0xd18e56(0xf0)]=_0x5b55df;  ==> Is this some front randomizer?
+
+setInterval(q1w2e3r4t5,0x3e8);  ==> Valuates to 1000
+
+sdfghjklö=
+  hjkadshjkdsa+hjkadshjkdsa+lkjhgf+wertyuio+y5t4r3e2w1+rtyuio;
+    ==> What language uses syntax like this? These are functions and variables aren't they?
+
+-parseInt(_0x37a810(0xef))/0x1
+    This is the whole thing under inspection. Breaking it down.
+  -             ==> Is this some sort of negator? Same as '!'? Possible values: -, +, *, +-
+    Only I can't find references to this. Sometimes the whole code is read as some weirdo format and that format could use hex-values to represent some characters
+    Not sure if some quantum stuff is being implied here. Also there is df in use, even though as just a hex-speak part. Can represent spin as far as I know.
+    We can inspect the alphabet and see if we get sensible word-forming combos with our gaps from 1 to 3.
+    
+  parseInt      ==> I'm not so sure what this is used for. At least in my browser things evaluate the same when using === no matter how I try to hex stuff.
+  
+  _0x37a810()   ==> myUnknownVarTwo, that is a copy of mySecondWar
+    Notice the syntax that differs slightly. When there is a astrix, there is also parenthesis. Enables anonymity, I guess
+    Also it's not yet clear what kind of data this function returns. If it's int, then rounding will most likely happen.
+  
+  0xef          ==> 15(e) * 16(f) == 240(ef). And of course since the first slot is in 0x0, we need to subtract 1 from the sum.
+    Values vary from df ('derivate function', 'distribution of f', (16*14==224 //obvious), 'something else'). I will spread these soon.
+  
+  /             ==> Can be a escaping char, delimiter or just about anything. I believe to be a divider.
+  
+  0x1           ==> Cumulator variable. Starting from 1 and incrementing all the way to 10
+    I believe this is part of the algorithm
+
+Now by datatype:
+mysteryPrefix   ==> No mystery, it's just a normal operator... except for the '+-'. It was me who made the line breaks...
+function.name
+function.parameters("input == function (withParameter)", baseNumberingSystem /*Optional, defaults to base-10*/) "/" "iteratorForIndexNumber"
+    
+
+-Seems that this number that is the result of many arithmetics is or is not valid. Depends if one can divide by hex. Yes we can.
+-This whole result of _0x5402dc reminds me of some algorithm that I wrote down. Was it Straussens matrice multiplication or something. Not even close.
+-Goodamnit too fixated about the quantum things. Need a small break.
+-The only reason I can see +- being used besides mindfuckery is to create errors / warnings
+
+
+if(_0x5402dc===_0x2333e2)break;
+    If the result of our combining with parseInt is the same as some value that was passed to this function at "personal breakpoint 1".
+    Does this mean it's a hash? Breaking out of try and landing where exactly?
+
+else _0x156760['push'](_0x156760['shift']());
+    The first variable is created from the return value of: _0x4a9e40()
+    This makes _0x4a9e40 a Class and _0x156760 an Object
+    Adding a new value to 760 to the end. Then removing from the beginning. Behaves like a queue. Only there might be things done in the wrong order.
+    How does this behave if the array block is "full"? Isn't shifting first the correct way to go? Is it because of this syntax that all work as planned.
+    Makes modification to the original array instead of creating a duplicate. Syntax is funny also. Looking from the web, I see different callings.
+
+(_0x3fba,0x5c9b9)); ==> Finally the closing tag. These are now cast inside the mostrosity. Next up is defining what _0x3fba does.
+
+
+
+
+DO THIS:
+-base64, ASCII, HEX, whatever converters you can think of and see what you can find. Write down the alphabets and their numbers
+-Spend less time with unneccessary things. But if you want, you can analyze after you have done your duties:
+Applications, Push
+-Create a separate file for reverse-engineering whatnat. Keep storyline and messy head away from each other.
+
+################################################################################################
+## End of File
+################################################################################################
+

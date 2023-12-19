@@ -1,0 +1,110 @@
+
+Created:	19.12.2023
+################################################################################################
+
+const_0x13bed0=     ==> Constant array. What can we do with one? Does this mean that only methods can be used on it? Is it stored in cache?
+    alpha#13 == m => M-bed-0. Do we need to put something inside the first element? Should we leave it be and not modify it?
+    Array holds:
+      -String, 'pink'   --> Not sure what this is. Can be entangled with multiple entries
+      -String, '5358771AxcgGl'  --> 358 == finland, 771 == rwxrwx--x, AxcgGl == "Any ace" + cg + "Good Luck"
+        Running AxcgGl on google gives lubricant commercials. I have no idea.
+        Firefox has "glean"
+      -String for all:
+      'pink'                PL,CO
+      '5358771AxcgGl'       U
+      'length'              PL,PR
+      '25ALkAjP'            U
+      'body'                PL,PR
+      'purple'              PL,CO
+      '7802450qkYNbO'       U
+      'grey'                PL,CO
+      '550040YFvrEq'        U
+      'red'                 PL,CO
+      'floor'               PL,M
+      '440797EoQVCw'        U
+      '798624SYQaLW'        U
+      '9GhsrtN'             U
+      '4hv3n.fi'            PL
+      '88cwkqba'            U
+      '417958IyOZao'        U
+      '119079hGwgmL'        U
+      'backgroundColor'     PL,PR
+      'brown'               PL,CO
+      
+-At first I thought of Base64, but the URL doesn't go under it.
+-Do the analysis later if feeling like it
+-I can't get stuff to work. That is a good thing. No one should ever code like here has been done.
+
+
+------------------------------------------------------------------------------------------------
+-- AnalOfParseSect --
+------------------------------------------------------------------------------------------------
+
+-Rabbit hole warning again. One can end up playing with numbers for a full day very easilly.
+-Here we have one need for sorting of the... lines? General topic. Let's see how a human brain does it.
+
+- The appearence of prefixes: -
+    -:    1 or 4
+      Neigbours: [(start)+] or [(start)+, *+, *+-, +-(end)]
+      Notes: Largest hex
+        Gaps(p || n): ['1, N/A']
+      
+    +:    3 or 6
+      Neigbours: [-*, **, +-*] or [-*, **, *+, +-*, *+-, +-(end)]
+      Notes:
+        Gaps(p || n): [1, 1] [2, 3] [3, 1]
+      
+    +-:   3
+      Neigbours: [*+, *+-, +-(end)]
+      Notes:
+        Gaps(p || n): [1, 1] [2, N/A] [3, 2]
+      
+    *:    3
+      Neigbours: ++, ++-, ++-
+      Notes:
+        Gaps(p || n): [1, 2] [2, 3] [2, 1]
+
+- My sorting algorithm: -
+1) Scanning and triggering interesting values by accident. Memorystamp created, but not a strong one just yet
+2) Focusing on different aspects than sorting alphabetically. While playing with the data, stronger pathways get created.
+3) Because data is in my short-term memory, I can just scan for one exception that is 'df' and start incrementing one-by-one. Original set remains unmodified.
+4) Since there is max difference of 3, finding can be filtered. Since handling of al and num, I get mixed up with the sorting. At first left out e<number> totally.
+5) Inserting after df, all numeric instances of e.
+6) When finished, I'll add some notes that may come in handy later
+
+parameter/  'parameter gap
+index       to next'
+---------------------------------------
+df/9+-      2
+e1/5*       3
+e4/a(10)+-  2
+e6/4+       3
+e9/7+       1
+ea/6+-      1
+eb/3*       2
+ed/8*       1
+ee/2+       1
+ef/1-
+
+-We can see that virtual memory works counter-intuitively when it comes to previous/next.
+-Electrons have a knack of bouncing around orbits. The repeating e could be a reference to that. There is also some limit to how they can jump. Can't remember.
+-If + and - are some elevator behaviours then what are * or +-?
+-Particles are (wikipedia TLDR, but there's a nice pic) categorized into 4 groups:
+    Quarks: Maybe spin or other properties.
+    Leptons: Electrons
+    GaugeBosons: Photons
+    ScalarBosons: Higgs (only represantive)
+-I'm somehow assuming that these parameter values represent some virtual memory address. I know of no stored datatype that holds 3 bytes in memory.
+-Then again I don't know just about anything about browsers.
+-We could put the things to a plane of some sort and see how it beheaves
+-How could I miss the chess reference. What a classic. Because this can't fit the board, having more than 8 slots per side
+
+CONTINUE IF YOU WANT, BUT NOT NOW.
+
+
+
+
+################################################################################################
+## End of File
+################################################################################################
+

@@ -1,0 +1,99 @@
+
+Created:	19.12.2023
+################################################################################################
+
+------------------------------------------------------------------------------------------------
+-- Answers to unknown syntax --
+------------------------------------------------------------------------------------------------
+[[ PERSONAL_BREAKPOINT_1: I don't know what happens here ]]
+See (1)(1.1)(1.2)(1.13.1)
+
+-If we want to have an anonymous function and call it right away, we can by wrapping it in () and right after, call it with some parameter we want.
+-Why would there be a need for this behaviour is unknown to me. Possibly to prevent bad input or enable securityleaks.
+-Inside the browser / local device: I'm assuming the code is at least read and translated without assigning values, before doing some other stuff.
+-There has to be something working differently with this way of doing stuff. I'm not sure when exactly stuff is loaded into memory and when is it good to have it waiting to be used. What memory is used when loading, is execution planned or does it handle surprises? Caching to local or middle storages is used. I have no idea when and how exactly.
+-Can this have something to do with scopes?
+-(1.13.1) had some new info for me. Objects have a name that is a variable of sorts. Let's call our object rabbithole. If we pass it to a function, it's useable inside the function normally. What happens when the function done running? It goes away, leaving no trace unless it's stored in a variable or maybe logs. Inside the function, let's say myFunkyFunk(), we want to access rabbithole. We can, but we can't rename it like: "rabbithole = 'Something else than it used to be on upper level';" but we can use methods on it (setter and getter). Doing the following is good:
+
+let rabbithole = someVeryUsefulObjectAsUsuallyIsInManuals;
+
+myFunkyFunk(rabbithole) {
+  console.log(rabbithole.name);         //Outputs: The rabbit from alice, whats it's name again?
+  console.log(rabbithole.getName());    //Outputs: Instructions on how the method getName() is built.
+  rabbithole.setName('Bugs Bunny');
+  console.log(rabbithole.getName());    //Outputs: Instructions on how the method setName() is built.
+  console.log(rabbithole.name);         //Outputs: Bugs Bunny
+
+  rabbithole = null;                    //Evildoer tries to wipe out our object, but fails. Effects are scoped only inside myFunkyFunk()
+  rabbithole.name = null;               //This works on the other hand. Evildoer needs to spend more time to wipe data. Each field needs tampering.
+  rabbithole.getName() = null;          //
+
+Quote: "The this keyword refers to the object that the function is accessed on — it does not refer to the currently executing function, so you must refer to the function value by name, even within the function body."
+
+-Fell into a rabbithole again. Key takeaway is that there is nothing really special in wrapping things inside () when it comes to this particular case.
+-You make things inside be invisible and then execute: (function () { <definition-here>; hiddenVariable=<something>; })();
+-Hey, it seems that if we want to pass the function to another function as a parameter, it will be tricky if our function doesn't have a name. This is the reason for ()
+    --> (1.13.1)
+-New info for me that I'm too tired to read at the moment: (1.2)
+
+
+------------------------------------------------------------------------------------------------
+[[ PERSONAL_BREAKPOINT_2: Wich one is it? ]]
+See (1.3)
+Problematic {
+const _0x37a810=_0x422f,_0x156760=_0x4a9e40();
+while(!![]){...;
+}
+
+-After using console on firefox, I found out that there is assignment of 2 constants. Instead of ; + <enter>, there is , used.
+-To be noted is that now that there is _0x4a9e40() instead of _0x4a9e40, the code inside gets run and the return value is inserted to _0x156760.
+-Whoops, I might be wrong. Can we define some entangled function where input is 2 things of which one is executing?
+-Can it be that function1,function2() executes the first function aswell?
+    --> No, after testing with minimal cases, I can almost safely say that _0x37a810 holds the definition of 0x422f
+    --> 0x156760 contains the return value of 0x4a9e40
+
+(1.3)
+-Double '!' means cast to boolean. Single '!' is un- operator or not- operator. Makes black be white and so on.
+-Can be used to see if some value evaluates as truthy or falsy in JS-World
+-When using '!!' on a string for example, evaluates the string ==> if not empty then truthy. Then first ! negates and second ! negates again. Type casting so to say.
+Falsy: [false, null, undefined, 0, -0, NaN (Not A Number), '' (empty string)
+Truthy: All else with a value in it.
+
+
+
+------------------------------------------------------------------------------------------------
+This is as far as I got with thesting this shit ATM
+
+function thanksfortrying() {
+  console.log("Inside from main function..\n");
+  try {
+    console.log("Inside try statement. I want an error somehow...\n");
+    console.dir(document);
+    
+    //Can't put try instead of document or error will appear.
+    //Seems that syntax errors don't cut it
+    //We can throw an error at the program to make it more error-prone
+    
+    console.log("Trying should be a block-level thing, not a function.\n");
+  } catch (errorMessage) {
+    console.log("message as it arrived to catch statement:\n");
+    console.log(errorMessage);
+    console.log("And now from stderr");
+    console.error(errorMessage);
+    if(!(errorMessage instanceof Error)) {
+      errorMessage = new Error(errorMessage);
+    }
+    console.log("Here is the reason for the error. Should come from error route instead of stdout:")
+    console.error(errorMessage.message);
+  } finally {
+    console.log("We reached the end of our file!");
+    return;
+  }
+}
+################################################################################################
+
+
+################################################################################################
+## End of File
+################################################################################################
+
