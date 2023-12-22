@@ -13,9 +13,12 @@ https://stackoverflow.com/questions/4043647/what-does-this-function-a-function-i
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch                              (1.14)
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt                             (1.15)
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop                                                    (1.17)
+https://developer.mozilla.org/en-US/docs/Web/API/setInterval                                                            (2.1)
 
 https://bytetool.web.app/en/ascii/code/0xdd/                                                                            (4.1)
 https://decimal.info/decimal-to-fraction/decimal-as-a-fraction-calculator.html                                          (4.2)
+
+https://www.base64decode.org/                                                                                           (5.1)
 
 https://new.nsf.gov/news/teleportation-possible-yes-quantum-world                                                       (7.1)
 https://en.wikipedia.org/wiki/Electron                                                                                  (7.2)

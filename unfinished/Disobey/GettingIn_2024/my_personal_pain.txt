@@ -1,0 +1,18 @@
+
+Created:	22.12.2023
+################################################################################################
+
+It seems I've done some work to find out how this mission was solvable. No solution found. There is a walkthrough that suggests you just run the weird script. I don't know if this is so smart. I don't want to run weird scripts normally. I'm thinking that now that the weir values are converted in to numbers, we can maybe deduct something out of them. I know myself that different parts of a program get allocated in different parts of memory. Sadly I don't know much about browsers. Virtual memory is referenced usually by a hexacecimal.
+
+Google states: "The core functions to base64 encode and decode in JavaScript are btoa() and atob() . btoa() goes from a string to a base64-encoded string, and atob() decodes back"
+
+Interesting line:
+setInterval(q1w2e3r4t5,0x3e8);
+setInterval(doWhat, timeInterval)
+
+Seems that kouvostopankki is down for the moment. Can't seem to be able to continue. Good thing I say.
+
+################################################################################################
+## End of File
+################################################################################################
+

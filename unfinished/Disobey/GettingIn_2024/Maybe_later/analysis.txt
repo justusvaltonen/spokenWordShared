@@ -9,18 +9,25 @@ const_0x13bed0=     ==> Constant array. What can we do with one? Does this mean 
       -String, '5358771AxcgGl'  --> 358 == finland, 771 == rwxrwx--x, AxcgGl == "Any ace" + cg + "Good Luck"
         Running AxcgGl on google gives lubricant commercials. I have no idea.
         Firefox has "glean"
-      -String for all:
+        
+       Common factors:
+       CO == Color
+       M  == Math related
+       PS == Plain text
+       U  == Unknown
+       
+      -String is the type for all values:
       'pink'                PL,CO
       '5358771AxcgGl'       U
-      'length'              PL,PR
+      'length'              PL
       '25ALkAjP'            U
-      'body'                PL,PR
+      'body'                PL
       'purple'              PL,CO
       '7802450qkYNbO'       U
       'grey'                PL,CO
       '550040YFvrEq'        U
       'red'                 PL,CO
-      'floor'               PL,M
+      'floor'               PL
       '440797EoQVCw'        U
       '798624SYQaLW'        U
       '9GhsrtN'             U
@@ -35,6 +42,9 @@ const_0x13bed0=     ==> Constant array. What can we do with one? Does this mean 
 -Do the analysis later if feeling like it
 -I can't get stuff to work. That is a good thing. No one should ever code like here has been done.
 
+0x13bed0 converts to a number 1294032 by running through hex converter
+
+-Running decode with base64 I don't get anything useful with the others
 
 ------------------------------------------------------------------------------------------------
 -- AnalOfParseSect --

@@ -1,0 +1,103 @@
+
+Created:	18.12.2023
+################################################################################################
+https://gofore.com/en/disobey-2024-hacker-puzzle-walkthrough/
+------------------------------------------------------------------------------------------------
+
+
+const eka_vaihdos='.';
+const _toka_vaihdos-funktiosta_yks=_funktio_yks;
+function _funktio_yks(_f1p1,_f1p2){
+  const _f2ret=_funktio-kaks();
+  return _funktio_yks=
+    function(_liittyy_f1,_random_param){
+        _liittyy_f1=_liittyy_f1-221;
+        let _liit_f1_of_ret_f2=_f2ret[_liittyy_f1];
+        return _liit_f1_of_ret_f2;
+    },
+    _funktio_yks(_f1p1,_f1p2);
+}
+
+[[ PERSONAL_BREAKPOINT_1: I don't know what happens here ]]
+  (function(_anon_p1,_anon_p2){
+
+[[ PERSONAL_BREAKPOINT_2: Wich one is it? ]]
+    const _f1-def-kopio=_funktio_yks,_anon-p1-ret=_anon_p1();
+    while(!![]){
+      try{
+        const _matikka_vastaus=
+          -parseInt(_f1-def-kopio(239))/0x1
+          +parseInt(_f1-def-kopio(238))/0x2
+          *(parseInt(_f1-def-kopio(236))/0x3)
+          +parseInt(_f1-def-kopio(230))/0x4
+          *(parseInt(_f1-def-kopio(225))/0x5)
+          +-parseInt(_f1-def-kopio(234))/0x6
+          +parseInt(_f1-def-kopio(232))/0x7
+          *(parseInt(_f1-def-kopio(237))/0x8)
+          +-parseInt(_f1-def-kopio(223))/0x9
+          +-parseInt(_f1-def-kopio(228))/0xa;
+          
+          if(_matikka_vastaus===_anon_p2)break;
+          else _anon-p1-ret['push'](_anon-p1-ret['shift']());
+      }
+      catch(_koppaa){
+        _anon-p1-ret['push'](_anon-p1-ret['shift']());
+      }
+    }
+  }
+  (_funktio-kaks,esiintyyvaankerran));
+[[ PERSONAL_BREAKPOINT_1: Definition ends here ]]
+
+function _funktio-kaks({
+  const_array_stringeja=
+    ['pink','5358771AxcgGl','length','25ALkAjP','body','purple','7802450qkYNbO','grey','550040YFvrEq',
+    'red','floor','440797EoQVCw','798624SYQaLW','9GhsrtN','4hv3n.fi','88cwkqba','417958IyOZao',
+    '119079hGwgmL','backgroundColor','brown'];
+  _funktio-kaks=function(){
+            return _array_stringeja;
+          };
+  return _funktio-kaks();
+}
+
+const hjkadshjkdsa='black',
+poiuytgvbnmk='orange',
+lkjhgf=_toka_vaihdos-funktiosta_yks(222),
+wertyuio=_toka_vaihdos-funktiosta_yks(221);
+    
+function intervalli_yhtalo(){
+  const _konstantine=toka_vaihdos-funktiosta_yks,
+  _point_konsta_palautus=
+    [_konstantine(231),
+    hjkadshjkdsa,
+    _konstantine(227),
+    poiuytgvbnmk,
+    _konstantine(229),
+    wertyuio,
+    lkjhgf],
+  _tyyli_1=
+    _point_konsta_palautus[Math[_konstantine(232)](Math['random']()*_point_konsta_palautus[_konstantine(0xe0)])];
+    document[_konstantine(0xe2)]['style'][_konstantine(0xf0)]=_tyyli_1;
+}
+
+setInterval(intervalli_yhtalo,1000);
+const rect=
+  'w3\x20ar3\x20l00k1ng\x20f0r\x20n3w\x20h4ck3rs\x20t0\x20j0in\x20uS,\x204pply\x20t0\x20J01n\x204hv3n:\x20',
+rtyuio=
+  _toka_vaihdos-funktiosta_yks(226),
+sdfghjklö=
+  hjkadshjkdsa+hjkadshjkdsa+lkjhgf+wertyuio+eka_vaihdos+rtyuio;
+
+/*
+'black', 'black', `${_toka_vaihdos-funktiosta_yks(222)}`, `${_toka_vaihdos-funktiosta_yks(221)}`, '.', `{_toka_vaihdos-funktiosta_yks(0x226)}`
+
+*/
+
+
+
+
+
+
+################################################################################################
+## End of File
+################################################################################################
+
